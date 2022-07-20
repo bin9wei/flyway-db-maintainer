@@ -2,7 +2,7 @@
 Java application using flyway to do database schema change with version control, support release and rollback.
 
 ## how to run locally
-Run `Main` from your IDE.
+Run `App` from your IDE.
 * To release, run without vm options
 * To rollback, run with vm options `-Drollback=true`
 
@@ -11,7 +11,7 @@ For test purpose it use H2 embeded database, you can replace with any database s
 
 You need to
 * Add related jdbc dependency in `pom.xml`
-* Change db details in `Main` as you need
+* Change db details in `App` as you need
 ````
     static final String JDBC_DRIVER = "org.h2.Driver";
     static final String DB_URL = "jdbc:h2:~/test";
